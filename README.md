@@ -28,7 +28,8 @@ The game logic is encapsulated in the play_game() **function**, which separates 
 ## Screenshots
 
 Example screenshots for the "Guess a Number" game:
-<img alt="image" width="555px" src="https://github.com/user-attachments/assets/c913a6c7-b3e2-4727-b83c-7f837ca99a66" />
+<img alt="image" width="555px" src="https://github.com/user-attachments/assets/5a49832d-2486-49f3-bc86-532610a1ca74" />
+
 
 
 ## Live Demo
