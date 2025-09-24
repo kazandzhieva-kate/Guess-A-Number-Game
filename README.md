@@ -36,3 +36,6 @@ Example screenshots for the "Guess a Number" game:
 
 You can play the game directly in your Web browser here:
 
+[<img alt="Play Button" src="<img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/638678f7-fa53-4e56-83ab-442e5be1bc00" />
+">](https://replit.com/@katerinakazandz/Guess-A-Number-Game)
+
