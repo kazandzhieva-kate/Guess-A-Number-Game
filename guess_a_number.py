@@ -9,7 +9,7 @@ def play_game(max_number, original_number_of_tries):
 
         if player_input.strip().lower() == "end":
             print("Game severed manually.")
-            return None
+            return "quit"
 
         if not player_input.isdigit():
             print("Sorry, lad, wrong kinda input. Try again?")
@@ -19,7 +19,7 @@ def play_game(max_number, original_number_of_tries):
 
         if player_number == computer_number:
             print(f"Way to go! You guessed it!. And it only took {original_number_of_tries - number_of_tries_left + 1} tries!")
-            return True
+            return "win"
 
         elif player_number > computer_number:
             print("Ooops, too high! Better get your head out of the clouds!")
@@ -30,17 +30,23 @@ def play_game(max_number, original_number_of_tries):
         number_of_tries_left -= 1
 
     print(f"Oh no! You are all out of tries! The number was: {computer_number}")
+    return "lose"
 
 max_number = 100
 level = 1
+exit_game = False
 
 while True:
     print("Hello, dear friend! Want to play a game?")
     print(f"Can you guess the number i have generated? It should be between 1 and {max_number} :)")
     print(f"---Level {level}---")
     while True:
+        original_input = input("You have n tries to guess it. Please enter n: ")
+        if original_input.lower() == "end":
+            exit_game = True
+            break
         try:
-            original_number_of_tries = int(input("You have n tries to guess it. Please enter n: "))
+            original_number_of_tries = int(original_input)
             if original_number_of_tries <= 0:
                 print("Please enter a positive number of tries, dum dum.")
                 continue
@@ -48,9 +54,17 @@ while True:
         except ValueError:
             print("Sorry, lad, wrong kinda input. Try again?")
 
-    win = play_game(max_number, original_number_of_tries)
+    if exit_game:
+        print(f"Thanks for playing! You made it to level {level}.")
+        break
 
-    if win:
+    result = play_game(max_number, original_number_of_tries)
+
+    if result == "quit":
+        print(f"Thanks for playing! You made it to level {level}.")
+        break
+
+    if result == "win":
         level += 1
         max_number += 100
 
