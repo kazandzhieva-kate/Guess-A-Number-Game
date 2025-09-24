@@ -13,6 +13,13 @@ The computer will tell the user whether each of his guesses is **lower** or **hi
 The user may **terminate** the game at any point using the **"End"** command at the terminal.
 
 ## Solution
+This program is built in Python, using the standard library module **random** to generate unpredictable numbers within a given range. 
+
+The main algorithm is a **loop-based** guessing mechanism: the computer selects a hidden number, and the player has a limited number of attempts to guess it correctly. Each guess is checked against the target number with **conditional statements** to give hints (“too high” or “too low”), and the number of remaining tries decreases after each round. 
+
+The code includes **input validation** (rejecting non-numeric values and handling a manual quit command with "end"), making it easier for user interaction. 
+
+The game logic is encapsulated in the play_game() **function**, which separates gameplay from the main loop that manages levels and difficulty progression.
 
 ## Link to the Source Code
 [SourceCode](guess_a_number.py)
