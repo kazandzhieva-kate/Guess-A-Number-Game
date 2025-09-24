@@ -1,7 +1,8 @@
 # Guess-A-Number-Game
 What the title says - trying something new.
 
-<img alt="cover" width="555px" src="https://github.com/user-attachments/assets/41c38222-afbe-47b1-98e6-44c49d404075" />
+<img alt="cover" width="555px" src="https://github.com/user-attachments/assets/5461820d-5e32-478a-a3c6-cd4bc925a22f" />
+
 
 ## Game Description
 
@@ -25,6 +26,10 @@ The game logic is encapsulated in the play_game() **function**, which separates 
 [SourceCode](guess_a_number.py)
 
 ## Screenshots
+
+Example screenshots for the "Guess a Number" game:
+<img alt="image" width="555px" src="https://github.com/user-attachments/assets/c913a6c7-b3e2-4727-b83c-7f837ca99a66" />
+
 
 ## Live Demo
 
